@@ -1,0 +1,11 @@
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\Generic\bin\Debug\net8.0\Generic.deps.json
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\Generic\bin\Debug\net8.0\Generic.dll
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\Generic\bin\Debug\net8.0\Generic.pdb
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\Generic\obj\Debug\net8.0\Generic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\Generic\obj\Debug\net8.0\Generic.AssemblyInfoInputs.cache
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\Generic\obj\Debug\net8.0\Generic.AssemblyInfo.cs
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\Generic\obj\Debug\net8.0\Generic.csproj.CoreCompileInputs.cache
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\Generic\obj\Debug\net8.0\Generic.dll
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\Generic\obj\Debug\net8.0\refint\Generic.dll
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\Generic\obj\Debug\net8.0\Generic.pdb
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\Generic\obj\Debug\net8.0\ref\Generic.dll

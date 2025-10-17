@@ -1,0 +1,152 @@
+﻿@using Generic.Enums
+@model IEnumerable<Presentation.Models.Category>
+
+@{
+    ViewData["Title"] = "Category List";
+    var stt = 1;
+}
+
+<div class="container">
+    <div class="row pt-4 pb-2">
+        <div class="col-6">
+            <h2 class="text-dark">Category List</h2>
+        </div>
+    </div>
+
+    @* Alerts *@
+    @* @if (TempData["Error"] is string err) *@
+    @* { *@
+    @*     <div class="alert alert-danger alert-dismissible fade show mt-3" role="alert"> *@
+    @*         @err *@
+    @*         <button type="button" class="btn-close" data-bs-dismiss="alert"></button> *@
+    @*     </div> *@
+    @* } *@
+    @* @if (TempData["Success"] is string ok) *@
+    @* { *@
+    @*     <div class="alert alert-success alert-dismissible fade show mt-3" role="alert"> *@
+    @*         @ok *@
+    @*         <button type="button" class="btn-close" data-bs-dismiss="alert"></button> *@
+    @*     </div> *@
+    @* } *@
+
+    <form method="get" asp-action="Search" asp-controller="Category"
+          class="row g-3 align-items-end bg-light mb-4 rounded p-3 shadow-sm">
+
+        <div class="col-md-3">
+            <input type="text" name="keyword" class="form-control"
+                   placeholder="Enter category name or description"
+                   value="@ViewBag.Keyword" />
+        </div>
+
+        <div class="col-md-3">
+            <input type="number" name="parentCategoryId" class="form-control"
+                   placeholder="Parent Category ID" value="@ViewBag.ParentCategoryId" />
+        </div>
+
+      
+
+        <div class="col-md-3 d-flex gap-2">
+            <button type="submit" class="btn btn-primary d-flex align-items-center gap-2">
+                <i class="bi bi-search"></i><span>Search</span>
+            </button>
+            <a href="@Url.Action("Index", "Category")"
+               class="btn btn-secondary d-flex align-items-center gap-2">
+                <i class="bi bi-arrow-clockwise"></i><span>Reset</span>
+            </a>
+        </div>
+    </form>
+
+    <table class="table table-bordered table-striped mt-3">
+        <thead class="table-dark">
+            <tr>
+                <th>STT</th>
+                <th>Category Name</th>
+                <th>Category Description</th>
+                <th>Parent Category ID</th>
+                <th>Is Active</th>
+                <th>Number of Article</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    <td>@stt</td>
+                    <td>@obj.CategoryName</td>
+                    <td>@obj.CategoryDesciption</td>
+                    <td>@(obj.ParentCategoryId ?? 0)</td>
+                    <td>
+                        @if (obj.IsActive == true)
+                        {
+                            <span class="badge bg-success">Active</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">Inactive</span>
+                        }
+                    </td>
+                    <td>@obj.ArticleCount</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.CategoryId"
+                               class="btn btn-primary btn-sm mx-1">
+                                <i class="bi bi-pencil-square"></i> Edit
+                            </a>
+
+                            <button type="button"
+                                    class="btn btn-danger btn-sm mx-1"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#confirmDeleteModal"
+                                    data-id="@obj.CategoryId"
+                                    data-name="@obj.CategoryName">
+                                <i class="bi bi-trash3-fill"></i> Delete
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                stt++;
+            }
+        </tbody>
+    </table>
+</div>
+
+@* Modal xác nhận xoá *@
+<div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Xác nhận xoá danh mục</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                Bạn có chắc muốn xoá danh mục <strong id="catName"></strong>?
+            </div>
+            <div class="modal-footer">
+                <form id="deleteForm" method="post" asp-controller="Category" asp-action="DeleteConfirmed">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="id" id="catId" />
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+                    <button type="submit" class="btn btn-danger">Xoá</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('confirmDeleteModal')?.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const id = button.getAttribute('data-id');
+            const name = button.getAttribute('data-name');
+
+            document.getElementById('catId').value = id;
+            document.getElementById('catName').textContent = name;
+        });
+    </script>
+    @{
+        <partial name="_ValidationScriptsPartial"></partial>
+    }
+}
+

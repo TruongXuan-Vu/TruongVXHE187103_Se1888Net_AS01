@@ -1,0 +1,14 @@
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\bin\Debug\net8.0\DataAccess.dll
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\obj\Debug\net8.0\DataAccess.dll
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

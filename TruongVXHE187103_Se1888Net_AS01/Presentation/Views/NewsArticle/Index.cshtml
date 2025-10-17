@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Presentation.Models.NewsArticle>
+
+@{
+    ViewData["Title"] = "News Articles";
+    var stt = 1;
+}
+
+<div class="container">
+    <h2 class="mt-3">News Articles</h2>
+
+    <table class="table table-bordered table-striped mt-3">
+        <thead class="table-dark">
+            <tr>
+                <th class="w-5">STT</th>
+                <th class="w-5">News Title</th>
+                <th class="w-5">Headline</th>
+                <th class="w-5">Created Date</th>
+                <th class="w-50">News Content</th>
+                <th class="w-5">News Source</th>
+                <th class="w-5">News Status</th>
+                <th class="w-5">Category</th>
+                <th class="w-5">Created By</th>
+                <th class="w-5">Updated By</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@stt</td>
+                    <td>@item.Title</td>
+                    <td>@item.Headline</td>
+                    <td>@(item.CreatedDate?.ToString("yyyy-MM-dd") ?? "-")</td>
+
+                    <td class="w-50">@item.Content</td>
+                    <td>@(string.IsNullOrWhiteSpace(item.Source) ? "N/A" : item.Source)</td>
+                    <td>@item.Status</td>
+                    <td>@item.CategoryName</td>
+                    <td>@item.CreatedByName</td>
+                    <td>@(item.UpdatedByName ?? "-")</td>
+                </tr>
+                stt++;
+            }
+        </tbody>
+    </table>
+</div>

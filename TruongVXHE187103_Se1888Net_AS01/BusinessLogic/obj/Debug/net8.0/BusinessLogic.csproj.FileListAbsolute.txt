@@ -1,0 +1,15 @@
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\bin\Debug\net8.0\BusinessLogic.deps.json
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\bin\Debug\net8.0\BusinessLogic.dll
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\bin\Debug\net8.0\BusinessLogic.pdb
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\bin\Debug\net8.0\DataAccess.dll
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\bin\Debug\net8.0\DataAccess.pdb
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\obj\Debug\net8.0\BusinessLogic.csproj.AssemblyReference.cache
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\obj\Debug\net8.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\obj\Debug\net8.0\BusinessLogic.AssemblyInfoInputs.cache
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\obj\Debug\net8.0\BusinessLogic.AssemblyInfo.cs
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\obj\Debug\net8.0\BusinessLogic.csproj.CoreCompileInputs.cache
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\obj\Debug\net8.0\Business.CF5D6E35.Up2Date
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\obj\Debug\net8.0\BusinessLogic.dll
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\obj\Debug\net8.0\refint\BusinessLogic.dll
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\obj\Debug\net8.0\BusinessLogic.pdb
+D:\Assigment1_PRN222\ASS01\TruongVXHE187103_Se1888Net_AS01\BusinessLogic\obj\Debug\net8.0\ref\BusinessLogic.dll
